@@ -490,7 +490,7 @@ Test
     private static final String TEST_MESSAGE = "SECRET";
     private static final String TEST_ENC_MESSAGE = "NORDKU";
 
-    private final drdaniela.implementations.PlayfairCipher1 cipherInstance = new drdaniela.implementations.PlayfairCipher1(TEST_MESSAGE, TEST_KEY);
+    private final lab1.drdaniela.implementations.PlayfairCipher1 cipherInstance = new lab1.drdaniela.implementations.PlayfairCipher1(TEST_MESSAGE, TEST_KEY);
 
     @Test
     public void testCipherEncryption()
@@ -650,7 +650,7 @@ Test
     private static final int TEST_KEY_ALPH = 2;
     private static final String TEST_MESSAGE = "ACE";
     private static final String TEST_ENC_MESSAGE = "EGI";
-    drdaniela.implementations.CaesarPermutationCipher1 cipherInstance = new drdaniela.implementations.CaesarPermutationCipher1(TEST_KEY, TEST_KEY_ALPH);
+    lab1.drdaniela.implementations.CaesarPermutationCipher1 cipherInstance = new lab1.drdaniela.implementations.CaesarPermutationCipher1(TEST_KEY, TEST_KEY_ALPH);
 
     @Test
     public void testCipherEncryption()

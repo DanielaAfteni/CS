@@ -1,6 +1,6 @@
-package drdaniela;
+package lab1.drdaniela;
 
-import drdaniela.implementations.*;
+import lab1.drdaniela.implementations.*;
 
 public class Main
 {

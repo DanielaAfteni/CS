@@ -1,4 +1,4 @@
-package drdaniela.implementations;
+package lab1.drdaniela.implementations;
 
 import javafx.util.Pair;
 

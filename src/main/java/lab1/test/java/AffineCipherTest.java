@@ -1,18 +1,23 @@
+import lab1.drdaniela.Cipher;
+import lab1.drdaniela.implementations.AffineCipher;
 import org.junit.Test;
 
 import static org.junit.Assert.assertTrue;
 
-public class PlayfairCipher1
+
+public class AffineCipherTest
 {
     // we include data as:
-    //                      key
+    //                      first substitution key number
+    //                      second substitution key number
     //                      plaintext
     //                      ciphertext
-    private static final String TEST_KEY = "KEYWORD";
-    private static final String TEST_MESSAGE = "SECRET";
-    private static final String TEST_ENC_MESSAGE = "NORDKU";
+    private static final int TEST_KEY1 = 1;
+    private static final int TEST_KEY2 = 1;
+    private static final String TEST_MESSAGE = "DrVasile";
+    private static final String TEST_ENC_MESSAGE = "ESWBTJMF";
 
-    private final drdaniela.implementations.PlayfairCipher1 cipherInstance = new drdaniela.implementations.PlayfairCipher1(TEST_MESSAGE, TEST_KEY);
+    private final Cipher cipherInstance = new AffineCipher(TEST_KEY1, TEST_KEY2);
 
     // we test if the encryption is done in a right way
     // it consists of the comparison between the introduced plaintext and the ciphertext, after the encryption process

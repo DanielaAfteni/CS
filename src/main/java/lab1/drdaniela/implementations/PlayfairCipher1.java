@@ -1,6 +1,6 @@
-package drdaniela.implementations;
+package lab1.drdaniela.implementations;
 
-import drdaniela.Cipher;
+import lab1.drdaniela.Cipher;
 
 import java.awt.*;
 public class PlayfairCipher1 implements Cipher

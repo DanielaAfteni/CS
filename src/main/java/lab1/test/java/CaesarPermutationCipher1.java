@@ -1,21 +1,16 @@
-import drdaniela.Cipher;
-import drdaniela.implementations.CaesarCipher;
 import org.junit.Test;
 
 import static org.junit.Assert.assertTrue;
 
 
-public class CaesarCipherTest
+public class CaesarPermutationCipher1
 {
-    // we include data as:
-    //                      substitution key
-    //                      plaintext
-    //                      ciphertext
-    private static final int TEST_KEY = 1;
-    private static final String TEST_MESSAGE = "DrVasile";
-    private static final String TEST_ENC_MESSAGE = "ESWBTJMF";
 
-    private final Cipher cipherInstance = new CaesarCipher(TEST_KEY);
+    private static final int TEST_KEY = 2;
+    private static final int TEST_KEY_ALPH = 2;
+    private static final String TEST_MESSAGE = "ACE";
+    private static final String TEST_ENC_MESSAGE = "EGI";
+    lab1.drdaniela.implementations.CaesarPermutationCipher1 cipherInstance = new lab1.drdaniela.implementations.CaesarPermutationCipher1(TEST_KEY, TEST_KEY_ALPH);
 
     // we test if the encryption is done in a right way
     // it consists of the comparison between the introduced plaintext and the ciphertext, after the encryption process

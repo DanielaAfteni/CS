@@ -1,4 +1,4 @@
-package drdaniela;
+package lab1.drdaniela;
 
 public interface Cipher {
     // the size of the alphabet

@@ -1,6 +1,6 @@
-package drdaniela.implementations;
+package lab2.drdaniela.implementations;
 
-import drdaniela.Cipher;
+import lab1.drdaniela.Cipher;
 
 // rail fence cipher
 public class CaesarPermutationCipher1 implements Cipher

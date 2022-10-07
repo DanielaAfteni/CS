@@ -1,5 +1,7 @@
-import drdaniela.Cipher;
-import drdaniela.implementations.VigenereCipher;
+package lab2.test.java;
+
+import lab1.drdaniela.Cipher;
+import lab1.drdaniela.implementations.VigenereCipher;
 import org.junit.Test;
 
 import static org.junit.Assert.assertTrue;

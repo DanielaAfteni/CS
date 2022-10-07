@@ -1,4 +1,4 @@
-package drdaniela.implementations;
+package lab1.drdaniela.implementations;
 
 public class CaesarCipher extends SubstitutionCipher
 {
