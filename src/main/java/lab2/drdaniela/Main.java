@@ -1,35 +1,29 @@
 package lab2.drdaniela;
 
-import lab1.drdaniela.Cipher;
-import lab1.drdaniela.implementations.*;
+import lab2.drdaniela.implementations.DataEncryptionStandardDES;
+import lab2.drdaniela.implementations.RivestCipherRC4;
 
 public class Main
 {
     public static void main(String[] args)
     {
-        // Caesar Cipher
-        final Cipher cipher0 = new CaesarCipher(5);
-        System.out.println(cipher0.encrypt("ABC"));
+        // Rivest Cipher RC4
+        String message = "It is a cipher!";
+        String key = "Secret key should be kept secret.";
+        final Cipher rivestCipherRC4 = new RivestCipherRC4("This is pretty long key");
+        byte[] encryptmessage = rivestCipherRC4.encrypt(message, key);
+        String dencryptmessage = rivestCipherRC4.decrypt(encryptmessage, key);
+        System.out.println(encryptmessage);
+        System.out.println(dencryptmessage);
 
-        // Affine Cipher
-        final Cipher cipher1 = new AffineCipher(1, 5);
-        System.out.println(cipher1.encrypt("ABC"));
+        // Data encryption standard (DES)
+        String text1 = "729451AECB872416";
+        String key121 = "EBEACFDEF9148230";
+        final Cipher1 dataEncryptionStandardDES1 = new DataEncryptionStandardDES();
+        String encryptmessage1 = dataEncryptionStandardDES1.encrypt123(text1, key121);
+        System.out.println(encryptmessage1);
+        String dencryptmessage1 = dataEncryptionStandardDES1.decrypt123(encryptmessage1, key121);
+        System.out.println(dencryptmessage1);
 
-        // Vigenere Cipher
-        // F = A + 5
-        final Cipher cipher2 = new VigenereCipher("FFF");
-        System.out.println(cipher2.encrypt("ABC"));
-        System.out.println(cipher1.decrypt("FGH"));
-
-        // Playfair Cipher1
-        final PlayfairCipher1 cipher3 = new PlayfairCipher1("SECRET", "KEYWORD");
-        System.out.println(cipher3.encrypt("SECRET"));
-        System.out.println(cipher3.decrypt("NORDKU"));
-
-        // Caesar Permutation Cipher1
-        final CaesarPermutationCipher1 cipher4 = new CaesarPermutationCipher1(2, 2);
-        System.out.println(cipher4.getEncryptedData(2));
-        System.out.println(cipher4.encrypt("ACE"));
-        System.out.println(cipher4.decrypt("EGI"));
     }
 }

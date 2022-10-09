@@ -5,7 +5,7 @@ public interface Cipher {
     int ALPHABET_SIZE = 26;
 
     // main functions for encryption and decryption
-    String encrypt(final String message);
-    String decrypt(final String message);
+    byte[] encrypt(final String message, final String key);
+    String decrypt(final byte[] message, final String key);
 
 }
